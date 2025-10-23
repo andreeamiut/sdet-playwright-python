@@ -1,0 +1,40 @@
+[MESSAGES CONTROL]
+# Disable specific warnings that are intentional in test framework
+disable=
+    # Logging: We use f-strings for better readability (modern Python best practice)
+    logging-fstring-interpolation,
+    # Test fixtures: These are pytest patterns where redefining is expected
+    redefined-outer-name,
+    # Unused arguments: Pytest hooks and fixtures require specific signatures
+    unused-argument,
+    # Import warnings: allure is optional, imported conditionally
+    import-error,
+    # Too many arguments/locals: Test files can have many setup parameters
+    too-many-arguments,
+    too-many-locals,
+    # Line length: Sometimes longer lines are more readable
+    line-too-long,
+    # Missing docstrings in tests
+    missing-function-docstring,
+    # Duplicate code in tests is sometimes intentional
+    duplicate-code
+
+[BASIC]
+# Good variable names
+good-names=i,j,k,e,f,_,id,qa,ui,db,df,ax,dt,tz,logger
+
+[FORMAT]
+# Maximum line length
+max-line-length=120
+
+[DESIGN]
+# Maximum number of arguments for function/method
+max-args=10
+# Maximum number of locals for function/method
+max-locals=20
+# Maximum number of attributes for a class
+max-attributes=15
+
+[IMPORTS]
+# Allow wildcard imports in __init__.py files
+allow-wildcard-with-all=yes

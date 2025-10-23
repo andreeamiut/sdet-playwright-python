@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "Test@123",
+      "role": "admin"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "Test@456",
+      "role": "user"
+    }
+  ],
+  "contact_messages": [
+    {
+      "name": "Alice Johnson",
+      "message": "This is a test message for automation testing purposes."
+    },
+    {
+      "name": "Bob Wilson",
+      "message": "Testing the contact form with various inputs and validations."
+    }
+  ]
+}

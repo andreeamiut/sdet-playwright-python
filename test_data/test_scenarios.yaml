@@ -1,0 +1,34 @@
+test_scenarios:
+  smoke_tests:
+    - name: "Page Load Test"
+      priority: "critical"
+      timeout: 5
+      
+    - name: "Form Interaction Test"
+      priority: "high"
+      timeout: 10
+      
+  regression_tests:
+    - name: "Full Form Submission"
+      priority: "medium"
+      timeout: 30
+      data:
+        name: "Test User"
+        message: "This is a comprehensive test"
+        
+    - name: "Navigation Test Suite"
+      priority: "medium"
+      timeout: 20
+      
+form_validation:
+  required_fields:
+    - "name"
+    - "message"
+    
+  max_lengths:
+    name: 255
+    message: 1000
+    
+  special_characters:
+    allowed: ".,!?-'"
+    not_allowed: "<>{}[]"

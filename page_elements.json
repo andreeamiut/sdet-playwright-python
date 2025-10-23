@@ -1,0 +1,36 @@
+{
+  "headings": [
+    "h1: Automation Practice"
+  ],
+  "links": [
+    "Services -> https://ultimateqa.com/consulting/",
+    "About -> https://ultimateqa.com/about/",
+    "Blog -> https://ultimateqa.com/blog/",
+    "Newsletter -> https://ultimateqa.ck.page/profile",
+    "Education -> #",
+    "I want a free DISCOVERY SESSION -> https://forms.clickup.com/2314027/p/f/26ktb-6387/5",
+    "Big page with many elements -> ../complicated-page",
+    "Fake Landing Page -> ../fake-landing-page",
+    "Fake Pricing Page -> ../fake-pricing-page",
+    "Fill out forms -> https://ultimateqa.com/filling-out-forms/",
+    "Learn how to automate an application that evolves  -> https://ultimateqa.com/sample-application-lifecycl",
+    "Login automation -> http://courses.ultimateqa.com/users/sign_in",
+    "Interactions with simple elements -> ../simple-html-elements-for-automation/",
+    "Follow -> https://www.linkedin.com/company/ultimate-qa",
+    "Follow -> https://twitter.com/ultimateqahq",
+    "Follow -> https://www.facebook.com/Ultimateqa1",
+    "Follow -> https://www.instagram.com/ultimate.qa",
+    "Follow -> https://www.youtube.com/@UltimateQA",
+    "About -> https://ultimateqa.com/about/",
+    "Blog -> https://ultimateqa.com/blog/",
+    "Java SDET Academy -> https://ultimateqa.ck.page/academy-coming-soon",
+    "Contact Us -> https://ultimateqa.com/contact/"
+  ],
+  "buttons": [
+    "Button: "
+  ],
+  "inputs": [],
+  "forms": [
+    "Found 1 forms"
+  ]
+}
