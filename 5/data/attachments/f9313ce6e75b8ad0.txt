@@ -1,0 +1,9 @@
+INFO     [0mtests.conftest[0m:conftest.py:182 ================================================================================
+INFO     [0mtests.conftest[0m:conftest.py:183 Starting test: test_navigation_links_are_visible[chromium]
+INFO     [0mtests.conftest[0m:conftest.py:184 Test file: D:\a\sdet-playwright-python\sdet-playwright-python\tests\test_smoke.py
+INFO     [0mtests.conftest[0m:conftest.py:185 ================================================================================
+INFO     [0mtests.conftest[0m:conftest.py:80 Creating new page for test: test_navigation_links_are_visible[chromium]
+INFO     [0mAutomationPage[0m:base_page.py:46 Navigating to: https://ultimateqa.com/automation
+INFO     [0mAutomationPage[0m:base_page.py:216 Waiting for element h1 to be visible
+INFO     [0mtests.conftest[0m:conftest.py:151 Test PASSED: test_navigation_links_are_visible[chromium]
+INFO     [0mtests.conftest[0m:conftest.py:189 Finished test: test_navigation_links_are_visible[chromium]
