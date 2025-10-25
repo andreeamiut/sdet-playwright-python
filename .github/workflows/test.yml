@@ -56,11 +56,11 @@ jobs:
         echo "TRACE_ON_FAILURE=true" >> .env
         
     - name: Run smoke tests
-      run: pytest -m smoke --browser=${{ matrix.browser }} -v
+      run: pytest tests/ -m smoke --browser=${{ matrix.browser }} -v --alluredir=reports/allure-results --html=reports/html/report.html --self-contained-html
       continue-on-error: false
       
     - name: Run regression tests
-      run: pytest -m regression --browser=${{ matrix.browser }} -v
+      run: pytest tests/ -m regression --browser=${{ matrix.browser }} -v --alluredir=reports/allure-results --html=reports/html/report.html --self-contained-html
       continue-on-error: true
       if: success() || failure()
       
