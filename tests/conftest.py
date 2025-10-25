@@ -37,32 +37,65 @@ def pytest_unconfigure(config):
 
 
 @pytest.fixture(scope="session")
-def browser_type_launch_args():
-    """Browser launch arguments"""
-    return {
+def browser_type_launch_args(browser_name: str):
+    """
+    Browser launch arguments (browser-specific)
+    
+    Args:
+        browser_name: Name of the browser (chromium, firefox, webkit)
+    
+    Returns:
+        Dict with browser launch arguments
+    """
+    # Base arguments
+    launch_args = {
         "headless": config.headless,
         "slow_mo": config.slow_mo,
-        "args": [
+    }
+    
+    # Add browser-specific arguments
+    if browser_name == "chromium":
+        launch_args["args"] = [
             "--disable-blink-features=AutomationControlled",
             "--disable-dev-shm-usage",
         ]
-    }
+    elif browser_name == "firefox":
+        # Firefox-specific arguments
+        launch_args["args"] = []
+    elif browser_name == "webkit":
+        # WebKit doesn't support many custom args
+        launch_args["args"] = []
+    
+    return launch_args
 
 
 @pytest.fixture(scope="session")
-def browser_context_args():
-    """Browser context arguments"""
-    user_agent = (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36"
-    )
-    return {
+def browser_context_args(browser_name: str):
+    """
+    Browser context arguments (browser-specific)
+    
+    Args:
+        browser_name: Name of the browser (chromium, firefox, webkit)
+        
+    Returns:
+        Dict with browser context arguments
+    """
+    context_args = {
         "viewport": {"width": 1920, "height": 1080},
-        "user_agent": user_agent,
         "locale": "en-US",
         "timezone_id": "America/New_York",
     }
+    
+    # Only set custom user agent for Chromium
+    # Firefox and WebKit have their own default user agents
+    if browser_name == "chromium":
+        context_args["user_agent"] = (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        )
+    
+    return context_args
 
 
 @pytest.fixture(scope="function")
