@@ -1,0 +1,9 @@
+2025-10-27 03:16:34 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-10-27 03:16:34 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_navigation_links_are_visible[firefox]
+2025-10-27 03:16:34 - [0mtests.conftest[0m - [32mINFO[0m - Test file: /Users/runner/work/sdet-playwright-python/sdet-playwright-python/tests/test_smoke.py
+2025-10-27 03:16:34 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-10-27 03:16:34 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_navigation_links_are_visible[firefox]
+2025-10-27 03:16:34 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
+2025-10-27 03:16:35 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
+2025-10-27 03:16:35 - [0mtests.conftest[0m - [32mINFO[0m - Test PASSED: test_navigation_links_are_visible[firefox]
+2025-10-27 03:16:35 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_navigation_links_are_visible[firefox]
