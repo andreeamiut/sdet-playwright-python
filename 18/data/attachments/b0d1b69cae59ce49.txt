@@ -1,0 +1,10 @@
+2025-11-06 03:11:58 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-11-06 03:11:58 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_page_loads_successfully[firefox]
+2025-11-06 03:11:58 - [0mtests.conftest[0m - [32mINFO[0m - Test file: D:\a\sdet-playwright-python\sdet-playwright-python\tests\test_smoke.py
+2025-11-06 03:11:58 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-11-06 03:11:59 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_page_loads_successfully[firefox]
+2025-11-06 03:12:00 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
+2025-11-06 03:12:01 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
+2025-11-06 03:12:01 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
+2025-11-06 03:12:02 - [0mtests.conftest[0m - [32mINFO[0m - Test PASSED: test_page_loads_successfully[firefox]
+2025-11-06 03:12:02 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_page_loads_successfully[firefox]
