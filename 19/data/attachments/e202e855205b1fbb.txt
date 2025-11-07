@@ -1,0 +1,9 @@
+2025-11-07 03:06:35 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-11-07 03:06:35 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_all_practice_links_visible[firefox]
+2025-11-07 03:06:35 - [0mtests.conftest[0m - [32mINFO[0m - Test file: /Users/runner/work/sdet-playwright-python/sdet-playwright-python/tests/test_regression.py
+2025-11-07 03:06:35 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-11-07 03:06:35 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_all_practice_links_visible[firefox]
+2025-11-07 03:06:36 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
+2025-11-07 03:06:36 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
+2025-11-07 03:06:36 - [0mtests.conftest[0m - [32mINFO[0m - Test PASSED: test_all_practice_links_visible[firefox]
+2025-11-07 03:06:36 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_all_practice_links_visible[firefox]
