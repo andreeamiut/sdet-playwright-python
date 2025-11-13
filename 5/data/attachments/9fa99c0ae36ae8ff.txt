@@ -1,9 +1,0 @@
-INFO     [0mtests.conftest[0m:conftest.py:182 ================================================================================
-INFO     [0mtests.conftest[0m:conftest.py:183 Starting test: test_all_practice_links_visible[webkit]
-INFO     [0mtests.conftest[0m:conftest.py:184 Test file: D:\a\sdet-playwright-python\sdet-playwright-python\tests\test_regression.py
-INFO     [0mtests.conftest[0m:conftest.py:185 ================================================================================
-INFO     [0mtests.conftest[0m:conftest.py:80 Creating new page for test: test_all_practice_links_visible[webkit]
-INFO     [0mAutomationPage[0m:base_page.py:46 Navigating to: https://ultimateqa.com/automation
-INFO     [0mAutomationPage[0m:base_page.py:216 Waiting for element h1 to be visible
-INFO     [0mtests.conftest[0m:conftest.py:151 Test PASSED: test_all_practice_links_visible[webkit]
-INFO     [0mtests.conftest[0m:conftest.py:189 Finished test: test_all_practice_links_visible[webkit]
