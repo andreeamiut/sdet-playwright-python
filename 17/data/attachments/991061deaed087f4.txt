@@ -1,9 +1,0 @@
-2025-11-05 03:08:43 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
-2025-11-05 03:08:43 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_social_media_icons_present[webkit]
-2025-11-05 03:08:43 - [0mtests.conftest[0m - [32mINFO[0m - Test file: D:\a\sdet-playwright-python\sdet-playwright-python\tests\test_smoke.py
-2025-11-05 03:08:43 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
-2025-11-05 03:08:43 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_social_media_icons_present[webkit]
-2025-11-05 03:08:43 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
-2025-11-05 03:08:44 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
-2025-11-05 03:08:44 - [0mtests.conftest[0m - [32mINFO[0m - Test PASSED: test_social_media_icons_present[webkit]
-2025-11-05 03:08:44 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_social_media_icons_present[webkit]
