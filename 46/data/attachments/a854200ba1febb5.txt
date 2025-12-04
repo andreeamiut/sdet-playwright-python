@@ -1,0 +1,9 @@
+2025-12-04 03:16:19 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-12-04 03:16:19 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_page_heading_contains_text[firefox]
+2025-12-04 03:16:19 - [0mtests.conftest[0m - [32mINFO[0m - Test file: D:\a\sdet-playwright-python\sdet-playwright-python\tests\test_regression.py
+2025-12-04 03:16:19 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-12-04 03:16:19 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_page_heading_contains_text[firefox]
+2025-12-04 03:16:19 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
+2025-12-04 03:16:19 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
+2025-12-04 03:16:20 - [0mtests.conftest[0m - [32mINFO[0m - Test PASSED: test_page_heading_contains_text[firefox]
+2025-12-04 03:16:20 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_page_heading_contains_text[firefox]
