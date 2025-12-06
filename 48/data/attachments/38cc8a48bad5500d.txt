@@ -1,0 +1,10 @@
+2025-12-06 03:04:55 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-12-06 03:04:55 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_social_icons_visible[chromium]
+2025-12-06 03:04:55 - [0mtests.conftest[0m - [32mINFO[0m - Test file: /Users/runner/work/sdet-playwright-python/sdet-playwright-python/tests/test_regression.py
+2025-12-06 03:04:55 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2025-12-06 03:04:55 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_social_icons_visible[chromium]
+2025-12-06 03:04:55 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
+2025-12-06 03:05:25 - [0mtests.conftest[0m - [31mERROR[0m - Test FAILED: test_social_icons_visible[chromium]
+2025-12-06 03:05:25 - [0mtests.conftest[0m - [32mINFO[0m - Screenshot saved: screenshots/test_social_icons_visible[chromium]_20251206_030525.png
+2025-12-06 03:05:25 - [0mtests.conftest[0m - [32mINFO[0m - Trace saved: traces/test_social_icons_visible[chromium]_20251206_030525.zip
+2025-12-06 03:05:25 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_social_icons_visible[chromium]
