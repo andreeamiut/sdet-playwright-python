@@ -1,9 +1,0 @@
-2025-11-18 03:09:19 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
-2025-11-18 03:09:19 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_social_icons_visible[webkit]
-2025-11-18 03:09:19 - [0mtests.conftest[0m - [32mINFO[0m - Test file: D:\a\sdet-playwright-python\sdet-playwright-python\tests\test_regression.py
-2025-11-18 03:09:19 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
-2025-11-18 03:09:19 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_social_icons_visible[webkit]
-2025-11-18 03:09:19 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
-2025-11-18 03:09:19 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
-2025-11-18 03:09:20 - [0mtests.conftest[0m - [32mINFO[0m - Test PASSED: test_social_icons_visible[webkit]
-2025-11-18 03:09:20 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_social_icons_visible[webkit]
