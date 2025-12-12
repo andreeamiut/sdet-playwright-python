@@ -19,7 +19,7 @@ openpyxl==3.1.5
 pandas==2.2.3
 
 # Utilities
-requests==2.32.3
+requests==2.32.4
 pillow==11.0.0
 
 # Type Checking & Linting
