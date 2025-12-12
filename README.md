@@ -1,197 +1,134 @@
-# Test Automation Framework - Ultimate QA
+# 🎭 Playwright Python Test Automation Framework
 
-A professional-grade test automation framework built with Playwright and Python, following industry best practices and design patterns.
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![Playwright](https://img.shields.io/badge/Playwright-Latest-45ba4b?style=flat&logo=playwright&logoColor=white)](https://playwright.dev/python/)
+[![Pytest](https://img.shields.io/badge/Pytest-Framework-0A9EDC?style=flat&logo=pytest&logoColor=white)](https://pytest.org)
+[![CI](https://github.com/andreeamiut/sdet-playwright-python/actions/workflows/test.yml/badge.svg)](https://github.com/andreeamiut/sdet-playwright-python/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🏗️ Framework Architecture
+A production-ready test automation framework built with **Playwright** and **Python**, implementing industry best practices including Page Object Model, parallel execution, and CI/CD integration.
+
+## ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Page Object Model** | Clean separation of test logic and page interactions |
+| **Multi-Browser** | Chromium, Firefox, WebKit support |
+| **Parallel Execution** | pytest-xdist for faster test runs |
+| **CI/CD Ready** | GitHub Actions workflow included |
+| **Rich Reporting** | Allure reports, HTML reports, screenshots, videos |
+| **Data-Driven** | JSON, YAML test data support |
+| **Type Hints** | Full annotations for IDE support |
+
+## 🏗️ Project Structure
 
 ```
-playwright-python-framework/
-│
-├── pages/                      # Page Object Models
-│   ├── base_page.py           # Base page with common methods
-│   └── automation_page.py     # Specific page objects
-│
-├── tests/                     # Test cases
-│   ├── conftest.py           # Pytest fixtures and hooks
-│   ├── test_smoke.py         # Smoke tests
-│   └── test_regression.py    # Regression tests
-│
-├── utils/                     # Utilities and helpers
-│   ├── config_reader.py      # Configuration management
-│   ├── logger.py             # Custom logging
-│   ├── test_data.py          # Test data management
-│   └── helpers.py            # Helper functions
-│
-├── test_data/                # Test data files
-│   ├── test_users.json
-│   └── test_scenarios.yaml
-│
-├── reports/                  # Test reports (auto-generated)
-├── logs/                     # Log files (auto-generated)
+sdet-playwright-python/
+├── pages/                    # Page Object Models
+│   ├── base_page.py         # Base class with common methods
+│   └── automation_page.py   # Page-specific implementations
+├── tests/                    # Test suites
+│   ├── test_smoke.py        # Smoke tests
+│   └── test_regression.py   # Regression tests
+├── utils/                    # Utilities
+│   ├── config_reader.py     # Configuration management
+│   ├── logger.py            # Custom logging
+│   └── helpers.py           # Helper functions
+├── test_data/               # Test data files
+├── .github/workflows/       # CI/CD pipelines
+├── conftest.py              # Pytest fixtures
 ├── pytest.ini               # Pytest configuration
-├── requirements.txt         # Python dependencies
-└── .env                     # Environment variables
+└── requirements.txt         # Dependencies
 ```
 
-## ✨ Features
+## 🚀 Quick Start
 
-- **Page Object Model (POM)**: Clean separation of test logic and page elements
-- **Pytest Framework**: Powerful testing with fixtures and parametrization
-- **Multi-Browser Support**: Chrome, Firefox, Safari, Edge
-- **Parallel Execution**: Run tests in parallel with pytest-xdist
-- **Smart Waits**: Auto-waiting for elements with custom timeout handling
-- **Comprehensive Reporting**: Allure reports, HTML reports, screenshots, videos
-- **CI/CD Ready**: GitHub Actions workflow included
-- **Data-Driven Testing**: JSON, YAML, Excel support
-- **Logging**: Detailed logging for debugging
-- **Rerun Failed Tests**: Automatic retry on failures
-- **Type Hints**: Full type annotation for better IDE support
-
-## 🚀 Setup
-
-### Prerequisites
-- Python 3.10 or higher
-- pip package manager
-
-### Installation
-
-1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd "SDET playwright python"
-```
+# Clone repository
+git clone https://github.com/andreeamiut/sdet-playwright-python.git
+cd sdet-playwright-python
 
-2. **Create virtual environment**
-```bash
+# Create virtual environment
 python -m venv venv
-.\venv\Scripts\activate  # Windows
-```
+source venv/bin/activate  # Linux/Mac
+.\venv\Scripts\activate   # Windows
 
-3. **Install dependencies**
-```bash
+# Install dependencies
 pip install -r requirements.txt
 playwright install
-```
 
-4. **Configure environment**
-```bash
-cp .env.example .env
-# Edit .env with your configuration
+# Run tests
+pytest
 ```
 
 ## 🧪 Running Tests
 
-### Run all tests
 ```bash
+# All tests
 pytest
-```
 
-### Run specific test file
-```bash
-pytest tests/test_smoke.py
-```
+# Specific markers
+pytest -m smoke
+pytest -m regression
 
-### Run with specific markers
-```bash
-pytest -m smoke           # Smoke tests only
-pytest -m regression      # Regression tests only
-pytest -m critical        # Critical tests only
-```
+# Parallel execution
+pytest -n auto
 
-### Run in parallel
-```bash
-pytest -n 4              # Run with 4 workers
-pytest -n auto           # Auto-detect number of CPUs
-```
-
-### Run with specific browser
-```bash
-pytest --browser chromium
+# Specific browser
 pytest --browser firefox
-pytest --browser webkit
-```
 
-### Run in headed mode
-```bash
-pytest --headed
-```
-
-### Generate Allure report
-```bash
+# With Allure report
 pytest --alluredir=reports/allure-results
 allure serve reports/allure-results
 ```
 
-## 📊 Reports
+## ⚙️ Configuration
 
-### HTML Report
-After test execution, find the report at:
+Environment variables (`.env`):
+
+```env
+BASE_URL=https://your-app.com
+BROWSER=chromium
+HEADLESS=true
+DEFAULT_TIMEOUT=30000
 ```
-reports/html/report.html
-```
-
-### Allure Report
-Generate and view Allure report:
-```bash
-allure serve reports/allure-results
-```
-
-### Logs
-Detailed logs are available at:
-```
-logs/test_execution.log
-```
-
-## 🔧 Configuration
-
-### pytest.ini
-Configure pytest behavior, markers, and logging.
-
-### .env
-Set environment-specific variables:
-- `BASE_URL`: Application URL
-- `BROWSER`: Default browser (chromium/firefox/webkit)
-- `HEADLESS`: Run in headless mode (true/false)
-- `DEFAULT_TIMEOUT`: Default timeout in milliseconds
 
 ## 📝 Writing Tests
 
-### Example Test
 ```python
 import pytest
 from pages.automation_page import AutomationPage
 
 @pytest.mark.smoke
-def test_example(page):
+def test_user_login(page):
     automation_page = AutomationPage(page)
     automation_page.navigate()
-    automation_page.verify_page_loaded()
+    automation_page.login("user@example.com", "password")
+    assert automation_page.is_logged_in()
 ```
 
-## 🎯 Best Practices
+## 📊 Reports
 
-1. **One assertion per test method** (when possible)
-2. **Use descriptive test names**
-3. **Keep tests independent**
-4. **Use Page Object Model**
-5. **Implement proper waits**
-6. **Clean test data after execution**
-7. **Use markers for test organization**
-8. **Maintain test data separately**
+| Report Type | Location |
+|-------------|----------|
+| HTML Report | `reports/html/report.html` |
+| Allure Report | `reports/allure-results/` |
+| Logs | `logs/test_execution.log` |
 
-## 🔄 CI/CD Integration
+## 🔄 CI/CD
 
-GitHub Actions workflow is included in `.github/workflows/test.yml`
-
-Push to repository to trigger automated tests on:
-- Push to main/develop branches
+Tests run automatically on:
+- Push to `main`/`develop` branches
 - Pull requests
-- Scheduled runs (nightly)
+- Scheduled nightly runs
 
-## 📞 Support
+## 👤 Author
 
-For issues and questions, please create an issue in the repository.
+**Andreea Miut** - Senior QA Automation Engineer
+
+[![GitHub](https://img.shields.io/badge/GitHub-andreeamiut-181717?style=flat&logo=github)](https://github.com/andreeamiut)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/andreeamiut/)
 
 ## 📄 License
 
-MIT License
+This project is licensed under the MIT License.
