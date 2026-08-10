@@ -1,0 +1,11 @@
+2026-08-10 02:45:48 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2026-08-10 02:45:48 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_social_media_icons_present[firefox]
+2026-08-10 02:45:48 - [0mtests.conftest[0m - [32mINFO[0m - Test file: D:\a\sdet-playwright-python\sdet-playwright-python\tests\test_smoke.py
+2026-08-10 02:45:48 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2026-08-10 02:45:48 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_social_media_icons_present[firefox]
+2026-08-10 02:45:48 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
+2026-08-10 02:45:48 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
+2026-08-10 02:45:48 - [0mtests.conftest[0m - [31mERROR[0m - Test FAILED: test_social_media_icons_present[firefox]
+2026-08-10 02:45:48 - [0mtests.conftest[0m - [32mINFO[0m - Screenshot saved: screenshots\test_social_media_icons_present[firefox]_20260810_024548.png
+2026-08-10 02:45:48 - [0mtests.conftest[0m - [32mINFO[0m - Trace saved: traces\test_social_media_icons_present[firefox]_20260810_024548.zip
+2026-08-10 02:45:49 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_social_media_icons_present[firefox]
