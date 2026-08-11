@@ -1,0 +1,11 @@
+2026-08-11 02:41:36 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2026-08-11 02:41:36 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_social_media_icons_present[webkit]
+2026-08-11 02:41:36 - [0mtests.conftest[0m - [32mINFO[0m - Test file: /Users/runner/work/sdet-playwright-python/sdet-playwright-python/tests/test_smoke.py
+2026-08-11 02:41:36 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2026-08-11 02:41:36 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_social_media_icons_present[webkit]
+2026-08-11 02:41:36 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
+2026-08-11 02:41:37 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
+2026-08-11 02:41:37 - [0mtests.conftest[0m - [31mERROR[0m - Test FAILED: test_social_media_icons_present[webkit]
+2026-08-11 02:41:37 - [0mtests.conftest[0m - [32mINFO[0m - Screenshot saved: screenshots/test_social_media_icons_present[webkit]_20260811_024137.png
+2026-08-11 02:41:37 - [0mtests.conftest[0m - [32mINFO[0m - Trace saved: traces/test_social_media_icons_present[webkit]_20260811_024137.zip
+2026-08-11 02:41:38 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_social_media_icons_present[webkit]

@@ -1,0 +1,11 @@
+INFO     [0mtests.conftest[0m:conftest.py:215 ================================================================================
+INFO     [0mtests.conftest[0m:conftest.py:216 Starting test: test_navigation_links_are_visible[webkit]
+INFO     [0mtests.conftest[0m:conftest.py:217 Test file: /Users/runner/work/sdet-playwright-python/sdet-playwright-python/tests/test_smoke.py
+INFO     [0mtests.conftest[0m:conftest.py:218 ================================================================================
+INFO     [0mtests.conftest[0m:conftest.py:113 Creating new page for test: test_navigation_links_are_visible[webkit]
+INFO     [0mAutomationPage[0m:base_page.py:46 Navigating to: https://ultimateqa.com/automation
+INFO     [0mAutomationPage[0m:base_page.py:216 Waiting for element h1 to be visible
+ERROR    [0mtests.conftest[0m:conftest.py:148 Test FAILED: test_navigation_links_are_visible[webkit]
+INFO     [0mtests.conftest[0m:conftest.py:156 Screenshot saved: screenshots/test_navigation_links_are_visible[webkit]_20260811_024136.png
+INFO     [0mtests.conftest[0m:conftest.py:172 Trace saved: traces/test_navigation_links_are_visible[webkit]_20260811_024136.zip
+INFO     [0mtests.conftest[0m:conftest.py:222 Finished test: test_navigation_links_are_visible[webkit]
