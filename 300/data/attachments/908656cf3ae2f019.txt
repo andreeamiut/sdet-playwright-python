@@ -1,0 +1,12 @@
+2026-08-12 02:51:26 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2026-08-12 02:51:26 - [0mtests.conftest[0m - [32mINFO[0m - Starting test: test_navigate_to_big_page[firefox]
+2026-08-12 02:51:26 - [0mtests.conftest[0m - [32mINFO[0m - Test file: /home/runner/work/sdet-playwright-python/sdet-playwright-python/tests/test_regression.py
+2026-08-12 02:51:26 - [0mtests.conftest[0m - [32mINFO[0m - ================================================================================
+2026-08-12 02:51:26 - [0mtests.conftest[0m - [32mINFO[0m - Creating new page for test: test_navigate_to_big_page[firefox]
+2026-08-12 02:51:27 - [0mAutomationPage[0m - [32mINFO[0m - Navigating to: https://ultimateqa.com/automation
+2026-08-12 02:51:27 - [0mAutomationPage[0m - [32mINFO[0m - Waiting for element h1 to be visible
+2026-08-12 02:51:27 - [0mAutomationPage[0m - [32mINFO[0m - Clicking element: a:has-text('Big page with many elements')
+2026-08-12 02:51:58 - [0mtests.conftest[0m - [31mERROR[0m - Test FAILED: test_navigate_to_big_page[firefox]
+2026-08-12 02:51:58 - [0mtests.conftest[0m - [32mINFO[0m - Screenshot saved: screenshots/test_navigate_to_big_page[firefox]_20260812_025158.png
+2026-08-12 02:51:58 - [0mtests.conftest[0m - [32mINFO[0m - Trace saved: traces/test_navigate_to_big_page[firefox]_20260812_025158.zip
+2026-08-12 02:51:58 - [0mtests.conftest[0m - [32mINFO[0m - Finished test: test_navigate_to_big_page[firefox]
