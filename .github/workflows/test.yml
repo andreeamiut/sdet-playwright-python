@@ -131,16 +131,32 @@ jobs:
         ref: gh-pages
         path: gh-pages
         
-    - name: Generate Allure Report
-      uses: simple-elf/allure-report-action@master
-      if: always()
+    - name: Setup Java for Allure
+      uses: actions/setup-java@v4
       with:
-        allure_results: artifacts
-        allure_history: allure-history
-        keep_reports: 20
-        
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Install Allure
+      run: |
+        wget -q https://github.com/allure-framework/allure2/releases/download/2.25.0/allure-2.25.0.tgz
+        tar -xzf allure-2.25.0.tgz
+        sudo mv allure-2.25.0 /opt/allure
+        sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+
+    - name: Generate Allure Report
+      run: |
+        if [ -d gh-pages/last-history ]; then
+          mkdir -p artifacts/history
+          cp -r gh-pages/last-history/. artifacts/history/
+        fi
+        mkdir -p artifacts allure-history
+        allure generate artifacts -o allure-history --clean
+        mkdir -p allure-history/last-history
+        cp -r allure-history/history/. allure-history/last-history/
+
     - name: Deploy report to GitHub Pages
-      if: always()
+      if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
