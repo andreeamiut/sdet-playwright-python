@@ -1,6 +1,6 @@
 # Core Testing Framework
-pytest==8.3.3
-pytest-playwright==0.5.2
+pytest==9.1.1
+pytest-playwright==0.10.0
 playwright==1.48.0
 pytest-xdist==3.6.1
 pytest-rerunfailures==14.0
@@ -10,7 +10,7 @@ allure-pytest==2.13.5
 pytest-html==4.1.1
 
 # Configuration & Environment
-python-dotenv==1.0.1
+python-dotenv==1.2.4
 pyyaml==6.0.2
 
 # Data Handling
@@ -19,10 +19,10 @@ openpyxl==3.1.5
 pandas==2.2.3
 
 # Utilities
-requests==2.32.4
-pillow==11.0.0
+requests==2.34.2
+pillow==13.0.0
 
 # Type Checking & Linting
 mypy==1.13.0
 pylint==3.3.1
-black==24.10.0
+black==26.10.1
