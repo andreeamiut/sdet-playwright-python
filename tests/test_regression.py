@@ -17,7 +17,7 @@ class TestNavigationLinks:
         
         # Click link and wait for navigation
         automation_page.click_big_page_link()
-        page.wait_for_url("**/complicated-page**", timeout=30000, wait_until="commit")
+        page.wait_for_url(lambda url: "complicated-page" in url, timeout=30000, wait_until="commit")
         
         # Verify URL changed
         assert "complicated-page" in page.url or "big-page" in page.url
