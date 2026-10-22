@@ -8,6 +8,6 @@ INFO     [0mAutomationPage[0m:base_page.py:46 Navigating to: https://ultimateq
 INFO     [0mAutomationPage[0m:base_page.py:216 Waiting for element h1 to be visible
 INFO     [0mAutomationPage[0m:base_page.py:81 Clicking element: a:has-text('Big page with many elements')
 ERROR    [0mtests.conftest[0m:conftest.py:148 Test FAILED: test_navigate_to_big_page[chromium]
-INFO     [0mtests.conftest[0m:conftest.py:156 Screenshot saved: screenshots/test_navigate_to_big_page[chromium]_20261022_081755.png
-INFO     [0mtests.conftest[0m:conftest.py:172 Trace saved: traces/test_navigate_to_big_page[chromium]_20261022_081756.zip
+INFO     [0mtests.conftest[0m:conftest.py:156 Screenshot saved: screenshots/test_navigate_to_big_page[chromium]_20261022_081858.png
+INFO     [0mtests.conftest[0m:conftest.py:172 Trace saved: traces/test_navigate_to_big_page[chromium]_20261022_081859.zip
 INFO     [0mtests.conftest[0m:conftest.py:222 Finished test: test_navigate_to_big_page[chromium]
