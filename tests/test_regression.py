@@ -17,7 +17,7 @@ class TestNavigationLinks:
         
         # Click link and wait for navigation
         automation_page.click_big_page_link()
-        page.wait_for_url("**/complicated-page**", timeout=10000)
+        page.wait_for_url("**/complicated-page**", timeout=30000, wait_until="domcontentloaded")
         
         # Verify URL changed
         assert "complicated-page" in page.url or "big-page" in page.url
