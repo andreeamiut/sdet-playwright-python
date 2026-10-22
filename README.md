@@ -100,11 +100,11 @@ import pytest
 from pages.automation_page import AutomationPage
 
 @pytest.mark.smoke
-def test_user_login(page):
+def test_navigation_links_visible(page):
     automation_page = AutomationPage(page)
     automation_page.navigate()
-    automation_page.login("user@example.com", "password")
-    assert automation_page.is_logged_in()
+    assert automation_page.is_big_page_link_visible()
+    assert automation_page.is_fake_landing_page_link_visible()
 ```
 
 ## 📊 Reports
