@@ -101,14 +101,14 @@ This is an enterprise-grade test automation framework built for testing https://
 | Technology | Version | Purpose |
 |------------|---------|---------|
 | Python | 3.14.0 | Programming language |
-| Playwright | 1.48.0 | Browser automation |
+| Playwright | 1.64.1 | Browser automation |
 | Pytest | 8.4.2 | Test framework |
 | Allure | 2.35.1 | Advanced reporting |
 
 ### Supporting Libraries
 | Library | Version | Purpose |
 |---------|---------|---------|
-| pytest-playwright | 0.7.1 | Pytest-Playwright integration |
+| pytest-playwright | 0.10.0 | Pytest-Playwright integration |
 | allure-pytest | 2.15.0 | Allure-pytest integration |
 | pytest-html | 4.1.1 | HTML report generation |
 | pytest-xdist | 3.8.0 | Parallel test execution |

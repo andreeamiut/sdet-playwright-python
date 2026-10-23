@@ -44,7 +44,7 @@ jobs:
         pip install -r requirements.txt
         
     - name: Install Playwright browsers
-      run: playwright install --with-deps ${{ matrix.browser }}
+      run: python -m playwright install --with-deps ${{ matrix.browser }}
       
     - name: Create .env file
       run: |

@@ -1,7 +1,7 @@
 # Core Testing Framework
 pytest==9.1.1
 pytest-playwright==0.10.0
-playwright==1.48.0
+playwright==1.64.1
 pytest-xdist==3.6.1
 pytest-rerunfailures==14.0
 
@@ -20,7 +20,7 @@ pandas==2.2.3
 
 # Utilities
 requests==2.34.2
-pillow==13.0.0
+pillow==12.2.0
 
 # Type Checking & Linting
 mypy==1.13.0
